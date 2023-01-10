@@ -13,7 +13,8 @@ namespace TestEFCoreTranscation
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost;database=TestDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite");
+            //optionsBuilder.UseSqlServer("server=localhost;database=TestDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite");
+            optionsBuilder.UseSqlServer("Data Source=20.205.208.185;initial catalog=TestDatabase;User ID=sioteksql;Password=sql@20210809;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;App=kevinConsole");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
